@@ -1,0 +1,147 @@
+@font-face {
+	font-family: "RedHatDisplay";
+	src: url(./fonts/RedHatDisplay-VariableFont_wght.ttf) format(truetype) tech(variations);
+	font-weight: 500 900;
+}
+
+@media only screen and (max-width: 375px) {
+	/* lmao "mobile" *scornful look* */
+	body {
+		background-image: url(./images/pattern-background-mobile.svg);
+	}
+
+	#component-main {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 376px) {
+	/* based PC screen */
+	body {
+		background-image: url(./images/pattern-background-desktop.svg);
+	}
+
+	#component-main {
+		width: 30%;
+	}
+}
+
+body {
+	font-family: "RedHatDisplay";
+	font-size: 16px;
+	background-color: hsl(225, 100%, 94%);
+	background-repeat: repeat-x;
+}
+
+strong {
+	font-weight: 900;
+}
+
+.gray {
+	color: hsl(224, 23%, 55%);
+}
+
+.nomargin {
+	margin: 0;
+}
+
+.shadow {
+	box-shadow: 0px 15px 30px hsla(244, 83%, 68%, 0.4);
+}
+
+#component-main {
+	position: absolute;
+	border-radius: 15px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#banner {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	border-radius: 15px 15px 0 0;
+}
+
+#flex-container {
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 0 0 15px 15px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 10%;
+}
+
+#flex-container>h3 {
+	margin: 0;
+	font-weight: 900;
+	font-size: 24px;
+}
+
+#flex-container>a {
+	text-decoration: none;
+	font-weight: 900;
+	font-size: 14px;
+}
+
+#steal-everything {
+	padding-top: 20px;
+}
+
+#steal-everything:hover {
+	color: hsl(224, 39%, 24%);
+}
+
+#plan-desc {
+	background-color: hsl(225, 100%, 98%);
+	width: 100%;
+	border-radius: 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 6%;
+}
+
+#plan-desc>a {
+	margin-left: auto;
+	color: hsl(244, 75%, 52%);
+	font-weight: 700;
+	font-size: 14px;
+}
+
+#plan-desc>a:hover {
+	color: hsl(244, 83%, 68%);
+}
+
+#plan-details {
+	padding-left: 20px;
+	text-align: left;
+}
+
+#pay-button {
+	background-color: hsl(244, 75%, 52%);
+	border-radius: 10px;
+	border: 0;
+	width: 100%;
+	color: hsl(0, 0%, 100%);
+	padding: 15px 0;
+	margin-top: 5%;
+}
+
+#pay-button:hover {
+	background-color: hsl(244, 83%, 68%);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution>a {
+	color: hsl(228, 45%, 44%);
+}
